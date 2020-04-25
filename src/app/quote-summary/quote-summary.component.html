@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 user-container">
+      <h2 style="margin: auto"> Quote Summary</h2>
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <th class="hidden">Id</th>
+          <th>S.NO</th>
+          <th>Quote Title</th>
+          <th>Details</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let quote of quotes;let i=index">
+          <td>{{increment()}}</td>
+          <td>{{quote.text}}</td>
+          <td><a [routerLink]="['/details', index]">View>></a></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+

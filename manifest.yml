@@ -1,0 +1,7 @@
+applications:
+- name: quotedemo
+  memory: 128M
+  disk_quota: 128M
+  random-route: false
+  instances: 1
+
